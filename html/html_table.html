@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th></th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+        </tr>
+        <tr>
+            <td>오전</td>
+            <td>국어</td>
+            <td>수학</td>
+            <td>미술</td>
+            <td>체육</td>
+            <td>영어</td>
+        </tr>
+        <tr>
+            <td>오후</td>
+            <td>영어</td>
+            <td>산수</td>
+            <td>미술</td>
+            <td>영어</td>
+            <td>체육</td>
+        </tr>
+    </table>
+
+    <hr/>
+
+    <table border="1">
+        <!-- tfoot 바닥글 table 안에서 tbody 아래 배치됨. -->
+        <tfoot>
+            <tr>
+                <!-- 열을 4개 병합 -->
+                <th colspan="4">
+                    Copyrights by choi.                    
+                </th>
+            </tr>
+        </tfoot>
+        <!-- thead 머릿글 table에서 tbody 상단에 배치됨. -->
+        <thead>
+            <tr>
+                <th colspan="4">학생정보</th>
+            </tr>    
+        </thead>
+        <tbody>
+            <tr>
+                <td>학번</td>
+                <td>학생이름</td>
+                <td>전화번호</td>
+                <!-- 행 병합. -->
+                <td rowspan="3">비고</td>
+            </tr>
+            <tr>
+                <td>10023</td>
+                <td>최기근</td>
+                <td>01094867166</td>
+                <!-- <td></td> -->
+            </tr>
+            <tr>
+                <td>10024</td>
+                <td>송상엽</td>
+                <td>01012345678</td>
+                <!-- <td></td> -->
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
